@@ -8,6 +8,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws SQLException {
+
         UserService userService = new UserServiceImpl();
         userService.createUsersTable();
         userService.saveUser("Ivan", "Vetrov", (byte)20);
@@ -21,5 +22,7 @@ public class Main {
         }
        userService.cleanUsersTable();
        userService.dropUsersTable();
+
+
     }
 }
